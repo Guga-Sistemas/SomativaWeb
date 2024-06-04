@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoL Analitico</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <header class="header">
+        <img src="img/logo lol.jpg" alt="teste">
+        <img src="img/logo lol.jpg" alt="Logotipo da Empresa">
+        <h1>League of Legends Analitico</h1>
+    </header>
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#main-dashboard">Home</a></li>
+                <li><a href="#tierlist">Tier List</a></li>
+                <li><a href="#campeoes">Campeões</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="content">
+        <section id="main-dashboard">
+            <h2>Análise Gráfica</h2>
+            <canvas id="dailyProductionChart"></canvas>
+            <canvas id="efficiencyComparisonChart"></canvas>
+            <table id="rawMaterialStockTable" class="table">
+                <thead>
+                    <tr>
+                        <th>Campeão</th>
+                        <th>Tier</th>
+                        <th>Taxa de Vitória</th>
+                        <th>Partidas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dados da tabela -->
+                </tbody>
+            </table>
+            <table id="currentProductionStatusTable" class="table">
+                <thead>
+                    <tr>
+                        <th>Feitiço de Invocador</th>
+                        <th>Vezes Utilizadas</th>
+                        <th>% de Efetividade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Copyright © 1999-2024 LoLAnalises.com.br.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts3.js"></script>
+</body>
+</html>
